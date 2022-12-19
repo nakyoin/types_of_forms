@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="all" style="margin-left: 30px; padding: 0;">
+        <h1>Добавление статьи</h1>
+        <div class="flex" style="display: flex;">
+            <p>Заголовок:</p> <input type="text" style="height: 20px; margin-top: 12px; margin-left: 50px;">
+        </div>
+        <div class="flex" style="display: flex;">
+        <p>URL:</p> <input type="url" style="height: 20px; margin-top: 12px; margin-left: 88px;">
+        </div>
+        <div class="flex" style="display: flex;">
+        <p>Контент:</p> <input type="text" style="height: 200px; width: 360px; margin-left: 62px; margin-top: 12px;">
+        </div>
+        <div class="flex" style="display: flex; margin-top: 30px;">
+        <p>Публикация:</p> <input type="checkbox" style="margin-left: 42px;">
+        </div>
+        <div class="flex" style="display: flex;">
+        <p>Категория:</p> <select name="category" style="margin-left: 50px; margin-top: 11px; height: 27px;">
+            <option value="false">Категория не выбрана</option>
+            <option value="true">Категория выбрана</option>
+        </select>
+        </div>
+        <input type="submit" placeholder="Отправить" style="margin-top: 15px;">
+
+        <div class="posts">
+            <br><br><h1>Посты</h1><br><br>
+            <h2>{{ head_text_first }}</h2>
+            <h3>{{ text_first }}</h3> <br><br>
+
+            <h2>{{ head_text_sec }}</h2>
+            <h3>{{ text_sec }}</h3> <br><br>
+
+            <h2>{{ head_text_third }}</h2>
+            <h3>{{ text_third }}</h3> <br><br>
+        </div>
+    </div>
+</body>
+</html>
